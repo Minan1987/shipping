@@ -2,13 +2,7 @@
 
 /* Navbar */
 
-.navbar {
-  background-color: #021f3d;
-  padding: 0 !important;
-  height: 50px;
-}
-
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .navbar ul {
     position: relative;
   }
@@ -33,7 +27,7 @@
   .navbar-nav .nav-item:last-child::after {
     border-right: none;
   }
-}
+} */
 
 /* Slider */
 .slider {

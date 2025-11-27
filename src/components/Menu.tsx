@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "/images/mdglobal-logo.png";
 import Search from "./Search";
 import { CiSearch } from "react-icons/ci";
@@ -9,12 +9,14 @@ function Menu() {
   const [isOpenSearch, setIsOpenSearch] = useState(false);
 
   return (
-    <nav className="bg-neutral-100 text-blue-950 opacity-90 py-5">
-      <div className="container mx-auto flex items-center justify-center h-20 px-4 gap-16">
+    <nav className="fixed w-full z-10 top-12 bg-neutral-100 text-blue-950 opacity-90 py-5">
+      <div className="flex items-center justify-between h-20 px-4 lg:justify-center lg:gap-16">
         {/* Logo */}
-        <Link to="/">
-          <img src={logo} alt="MD Global Logestic" className="h-20" />
-        </Link>
+        <div className="w-fit">
+          <Link to="/">
+            <img src={logo} alt="MD Global Logestic" className="h-20" />
+          </Link>
+        </div>
 
         {/* Hamburger */}
         <button
@@ -48,7 +50,7 @@ function Menu() {
 
         {/* Menu Items */}
         <div
-          className={`flex-1 lg:flex lg:items-center lg:justify-between ${
+          className={`w-full bg-neutral-50 absolute lg:static top-28 text-center left-0 lg:bg-transparent lg:flex lg:w-fit lg:items-center lg:justify-between ${
             isOpenMenu ? "block" : "hidden"
           }`}
         >
@@ -90,13 +92,16 @@ function Menu() {
             </li>
             <li>
               {/* Search & Outlet */}
-              <div className="mt-4 lg:mt-0 lg:flex lg:items-center lg:space-x-4">
+              <div className="mt-4 lg:mt-0 lg:flex lg:items-center lg:space-x-4 hidden ">
                 <button
                   onClick={() => setIsOpenSearch(!isOpenSearch)}
                   className="text-2xl hover:text-yellow-500 transition"
                 >
                   <CiSearch />
                 </button>
+              </div>
+              <div className="lg:hidden flex justify-center py-4">
+                <Search />
               </div>
             </li>
           </ul>

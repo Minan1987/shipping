@@ -3,49 +3,45 @@ import slider from "/images/HomepageVideo003.mp4";
 
 const Slider = () => {
   return (
-    <div className="slider position-relative">
+    <div className="relative h-screen w-full overflow-hidden">
+      {/* Background Video */}
       <video
         autoPlay
         loop
         muted
-        className="w-100"
-        style={{
-          objectFit: "cover",
-          width: "100%",
-          height: "100vh",
-          position: "absolute",
-          top: "48px",
-          left: 0,
-          zIndex: -1,
-        }}
+        className="absolute top-0 left-0 w-full h-screen object-cover -z-10"
       >
         <source src={slider} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="container h-100 d-flex align-items-center">
-        <div className="w-100 text-center text-md-start">
-          <h2 className="slider-title text-light">
-            Leader In Power& <br /> Automatic <span>Technologies</span>
+
+      {/* Content */}
+      <div className="container mx-auto h-full flex items-center px-4">
+        <div className="w-full text-center md:text-left mt-12 md:mt-0">
+          <h2 className="text-white text-3xl md:text-5xl font-bold leading-tight">
+            Leader In Power & <br /> Automatic{" "}
+            <span className="text-yellow-400">Technologies</span>
           </h2>
-          <p className="text-light py-2">
+
+          <p className="text-gray-200 mt-4">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
             <br />
             sed diam nonumy eirmod tempor invidunt
             <br />
             ut labore et dolore magna.
           </p>
-          <div className="d-flex justify-content-center justify-content-md-start">
+
+          <div className="flex justify-center md:justify-start mt-6 gap-4">
             <Link
               to="/"
-              className="btn btn-warning me-3"
-              style={{ fontSize: "13px", fontWeight: "500" }}
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-medium text-sm px-5 py-2 rounded"
             >
               LEARN MORE
             </Link>
+
             <Link
-              to="services"
-              className="btn btn-info text-light"
-              style={{ fontSize: "13px", fontWeight: "500" }}
+              to="/services"
+              className="bg-sky-500 hover:bg-sky-600 text-white font-medium text-sm px-5 py-2 rounded"
             >
               OUR SERVICES
             </Link>
