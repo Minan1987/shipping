@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+/* Navbar */
+
+.navbar {
+  background-color: #021f3d;
+  padding: 0 !important;
+  height: 50px;
+}
+
+@media (min-width: 992px) {
+  .navbar ul {
+    position: relative;
+  }
+
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .navbar-nav .nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-right: 1px dotted #4b6a87;
+  }
+
+  .navbar-nav .nav-item:last-child::after {
+    border-right: none;
+  }
+}
+
+/* Slider */
+.slider {
+  height: 642px;
+}
+
+.slider .slider-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.slider .slider-title span {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  background-color: #10263b;
+}
+
+footer hr {
+  width: 30px;
+  margin: 10px 0 0 0;
+  opacity: 1;
+  border-top: 2px solid #51c5e9;
+}
+
+footer .socialLink ul li a {
+  color: #7f92a7;
+  padding-right: 15px;
+}
+
+footer .footer-links ul li svg {
+  font-size: 20px;
+  color: #51c5e9;
+}
+
+footer .socialLink ul li a svg {
+  font-size: 20px;
+}
+
+footer .footer-links ul li {
+  line-height: 2em;
+}
+
+footer .footer-links.quick ul li {
+  line-height: 2.5em;
+}
+
+footer .footer-links ul li a {
+  color: #7f92a7;
+}
+
+footer .contact-links ul li {
+  line-height: 3em;
+}
+
+footer .contact-links ul li span {
+  line-height: 1.2em;
+  color: #7f92a7;
+}
+
+footer .copy-right {
+  background-color: #081e2f;
+  color: #7f92a7;
+}
+
+.main-title {
+  color: #fda04d;
+  font-size: 13px;
+  width: 150px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title::after,
+.main-title::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #fda04d;
+  margin: 7px 5px 0 5px;
+}
+
+.main-title::after {
+  margin-left: 5px;
+}
+
+.main-title::before {
+  margin-right: 5px;
+}
+
+/* Services */
+.services {
+  min-height: 700px;
+  background: linear-gradient(to bottom, #f5f4f4 50%, white 50%);
+}
+
+.services .card {
+  position: relative;
+}
+
+.services .card .card-body {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  top: 90%;
+  width: 95%;
+  right: 0;
+  padding: 20px;
+}
+
+.services .card .card-body .card-title {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .services .card .card-body {
+    position: static;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.services .card .card-body .dashed-line {
+  border: 1px solid transparent;
+  border-image: repeating-linear-gradient(
+    90deg,
+    #827d7d 0,
+    #827d7d 10px,
+    transparent 10px,
+    transparent 14px
+  );
+  border-image-slice: 1;
+}
+
+.services .card .card-body .card-text {
+  color: #827d7d;
+}
+
+.services .card .card-body .read-more {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fda04d;
+}
+
+.services .card .card-body .read-more hr {
+  width: 30px;
+  margin: 0;
+  opacity: 1;
+  border-top: 2px solid #fda04d;
+}
+
+/* Features */
+.features .feature-icons .col-1 {
+  position: relative;
+}
+.features .feature-icons :not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-right: 2px solid #ddd;
+}
+
+.btn-dark-blue {
+  background-color: #081e2f;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+}
+
+.btn-dark-blue:hover {
+  background-color: transparent;
+  border: 1px solid #081e2f;
+}
+
+/* Client-Contact Section */
+.clients-contacts .title h2 {
+  color: #fda04d;
+  font-size: 13px;
+  width: 160px;
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-contacts .title h2::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #fda04d;
+  margin: 7px 5px 0 5px;
+}
+
+/* Contact */
+.contact-form {
+  border: 1px solid #e6e6e6;
+  padding: 60px;
+  outline: 10px solid #efefef;
+  outline-offset: -11px;
+}
+
+.blue-contact-section {
+  background-color: #174169;
+  color: #fff;
+}

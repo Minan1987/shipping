@@ -1,0 +1,15 @@
+export { default as TopHeader } from "./TopHeader";
+export { default as Menu } from "./Menu";
+export { default as Slider } from "./Slider";
+export { default as AboutUs } from "./AboutUs";
+export { default as Services } from "./Services";
+export { default as Projects } from "./Projects";
+export { default as News } from "./News";
+export { default as Shop } from "./Shop";
+export { default as ContactUs } from "./ContactUs";
+export { default as HomeServices } from "./HomeServices";
+export { default as Features } from "./Features";
+export { default as ClientsContact } from "./ClientsContact";
+export { default as BlueContactSection } from "./BlueContactSection";
+export { default as SearchResult } from "./SearchResult";
+export { default as Footer } from "./Footer";
