@@ -7,6 +7,7 @@ type Service = {
   image: string;
   icon: string;
   desc: string;
+  featured: boolean;
 };
 
 const Services = () => {
@@ -15,7 +16,9 @@ const Services = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:9000/services");
+        const res = await fetch(
+          "http://localhost:9000/services?featured=false"
+        );
         const data = await res.json();
         setServices(data);
       } catch (err) {
@@ -25,6 +28,7 @@ const Services = () => {
 
     fetchData();
   }, []);
+
   if (!services) {
     return <div>loading...</div>;
   }
@@ -34,7 +38,7 @@ const Services = () => {
       {/* TOP TEXT SECTION */}
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto ">
-          <h2 className="mx-auto text-xl font-bold border-b-4 border-yellow-500 w-52 pb-2">
+          <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-500 w-64 pb-2">
             Our Core Services
           </h2>
 
@@ -50,7 +54,7 @@ const Services = () => {
             <Link
               key={service.id}
               to="/"
-              className="group rounded-[10px] p-3 shadow-[0_2px_5px_rgba(142,154,173,0.6)]  transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#ef7303]"
+              className="group rounded-[10px] p-3 shadow-[0_2px_6px_rgba(234,179,8,0.5)] transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
             >
               <div className="text-center">
                 <img
@@ -65,25 +69,6 @@ const Services = () => {
               </div>
             </Link>
           ))}
-        </div>
-      </div>
-
-      {/* YELLOW CALL TO ACTION SECTION */}
-      <div className="bg-yellow-400 mt-16 py-10">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 w-full lg:w-4/5 mx-auto">
-            <p className="text-center lg:text-left text-2xl font-light">
-              Looking for an adequate solution for{" "}
-              <span className="font-bold">your company</span>
-            </p>
-
-            <Link
-              to="/contact-us"
-              className="bg-blue-900 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition"
-            >
-              CONTACT US
-            </Link>
-          </div>
         </div>
       </div>
     </section>

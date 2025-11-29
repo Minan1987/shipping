@@ -11,7 +11,7 @@ import {
   Shop,
   Projects,
   HomeIndustries,
-  Features,
+  FeaturesdServices,
   ClientsContact,
   SearchResult,
   BlueContactSection,
@@ -27,7 +27,7 @@ const HomePage = () => {
         <RequestQuote />
       </div>
       <Services />
-      <Features />
+      <FeaturesdServices />
       <HomeIndustries />
       <ClientsContact />
       <BlueContactSection />

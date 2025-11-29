@@ -10,7 +10,7 @@ export { default as News } from "./News";
 export { default as Shop } from "./Shop";
 export { default as ContactUs } from "./ContactUs";
 export { default as HomeIndustries } from "./HomeIndustries";
-export { default as Features } from "./Features";
+export { default as FeaturesdServices } from "./FeaturesdServices";
 export { default as ClientsContact } from "./ClientsContact";
 export { default as BlueContactSection } from "./BlueContactSection";
 export { default as SearchResult } from "./SearchResult";
