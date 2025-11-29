@@ -1,6 +1,7 @@
 export { default as TopHeader } from "./TopHeader";
 export { default as Menu } from "./Menu";
 export { default as Slider } from "./Slider";
+export { default as RequestQuote } from "./RequestQuote";
 export { default as AboutUs } from "./AboutUs";
 export { default as Services } from "./Services";
 export { default as Projects } from "./Projects";

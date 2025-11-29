@@ -11,70 +11,75 @@ const ContactFrom = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<IFormInput>({
     defaultValues: {
       name: "",
       email: "",
       phone: "",
     },
   });
+
   const formSubmiting: SubmitHandler<IFormInput> = (data) => {
     console.log(data);
   };
 
   return (
-    <div
-      className="contact-form container"
-      onSubmit={handleSubmit(formSubmiting)}
-    >
-      <form className="row">
-        <div className="col-md-12 mb-3">
+    <div className="w-full">
+      <form onSubmit={handleSubmit(formSubmiting)} className="space-y-4">
+        {/* NAME */}
+        <div>
           <input
             type="text"
-            className="form-control"
             placeholder="Your Name:"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             {...register("name", {
-              required: "Name is requiered!",
+              required: "Name is required!",
               minLength: {
                 value: 3,
-                message: "Name should have 3 character atleast!",
+                message: "Name should have at least 3 characters.",
               },
               maxLength: {
                 value: 10,
-                message: "Name should have 10 character maximum!",
+                message: "Name should have a maximum of 10 characters.",
               },
             })}
           />
-          {errors.name && <p className="text-danger">{errors.name.message}</p>}
+          {errors.name && (
+            <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>
+          )}
         </div>
-        <div className="col-md-12 mb-3">
+
+        {/* EMAIL */}
+        <div>
           <input
             type="text"
-            className="form-control"
-            placeholder="Your email:"
+            placeholder="Your Email:"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             {...register("email", {
-              required: "Email is requiered!",
+              required: "Email is required!",
               minLength: {
                 value: 10,
-                message: "Email should have 10 character atleast!",
+                message: "Email should have at least 10 characters.",
               },
               maxLength: {
                 value: 30,
-                message: "Email should have 30 character maximum!",
+                message: "Email should have a maximum of 30 characters.",
               },
               pattern: {
                 value: /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/g,
-                message: "Your email is not valid",
+                message: "Your email is not valid.",
               },
             })}
           />
           {errors.email && (
-            <p className="text-danger"> {errors.email.message} </p>
+            <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>
           )}
         </div>
-        <div className="col-md-12 mb-3">
-          <select className="form-select">
-            <option selected disabled value="">
+
+        {/* SELECT */}
+        <div>
+          <select className="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 outline-none">
+            <option disabled selected value="">
               Select One
             </option>
             <option>Option 1</option>
@@ -82,11 +87,13 @@ const ContactFrom = () => {
             <option>Option 3</option>
           </select>
         </div>
-        <div className="col-md-12 mb-3">
+
+        {/* PHONE */}
+        <div>
           <input
             type="text"
-            className="form-control"
             placeholder="Your Phone Number:"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             {...register("phone", {
               required: "Phone number is required!",
               pattern: {
@@ -97,18 +104,17 @@ const ContactFrom = () => {
             })}
           />
           {errors.phone && (
-            <p className="text-danger">{errors.phone.message}</p>
+            <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>
           )}
         </div>
-        <div className="col-12">
-          <button
-            className="btn btn-warning fw-bold py-2"
-            style={{ fontSize: "13px" }}
-            type="submit"
-          >
-            SUBMIT NOW
-          </button>
-        </div>
+
+        {/* SUBMIT BUTTON */}
+        <button
+          type="submit"
+          className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 text-sm rounded-md transition"
+        >
+          SUBMIT NOW
+        </button>
       </form>
     </div>
   );

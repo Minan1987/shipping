@@ -14,13 +14,18 @@ import {
   ClientsContact,
   SearchResult,
   BlueContactSection,
+  RequestQuote,
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <>
-      <Slider />
+      <div className="flex flex-col h-screen w-full">
+        <Slider />
+        <RequestQuote />
+      </div>
+
       <HomeServices />
       <Features />
       <ClientsContact />

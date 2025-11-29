@@ -5,90 +5,69 @@ import serviceImg3 from "/images/sample3.webp";
 
 const HomeServices = () => {
   return (
-    <section className="services py-5">
-      <div className="container">
-        <div className="text-center w-50 m-auto">
-          <h2 className="main-title">WHAT WE DO</h2>
-          <h3 className="fs-1 fw-bold m-auto">We Offer Different Services</h3>
-          <p className="text-secondary py-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perferendis fuga doloribus, molestias quod facere ex illo delectus
-            dolores beatae enim nulla totam rerum qui rem eveniet voluptate
-            cupiditate!
+    <section className="py-10 bg-white">
+      <div className="container mx-auto px-4">
+        {/* Title */}
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-yellow-600 text-lg font-semibold tracking-wide">
+            WHAT WE DO
+          </h2>
+
+          <h3 className="text-3xl font-bold mt-2">
+            We Offer Different Services
+          </h3>
+
+          <p className="text-gray-600 mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            fuga doloribus, molestias quod facere ex illo delectus dolores
+            beatae enim nulla totam rerum qui rem eveniet voluptate cupiditate!
           </p>
         </div>
-        <div className="row pt-4">
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card border-0">
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          {[serviceImg1, serviceImg2, serviceImg3].map((img, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100"
+            >
+              {/* Image */}
               <img
-                src={serviceImg1}
-                className="card-img-top rounded-3"
-                alt="service1"
+                src={img}
+                className="w-full h-60 object-cover rounded-t-lg"
+                alt={`service${i + 1}`}
               />
-              <div className="card-body  shadow-sm">
-                <h5 className="card-title fw-bold pt-3">
-                  Agricaltural Processing
+
+              {/* Card Body */}
+              <div className="p-5">
+                <h5 className="font-bold text-xl pt-2">
+                  {i === 0
+                    ? "Agricaltural Processing"
+                    : i === 1
+                    ? "Alternate Energy"
+                    : "Chemical Research"}
                 </h5>
-                <hr className="dashed-line" />
-                <p className="card-text">
+
+                {/* Dashed line */}
+                <hr className="border-dashed my-3" />
+
+                <p className="text-gray-600">
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content.
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title.
                 </p>
-                <Link to="/services" className="btn read-more">
+
+                {/* Read More */}
+                <Link
+                  to="/services"
+                  className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
+                >
                   READ MORE
-                  <hr />
+                  <hr className="border-yellow-600 mt-1 w-20" />
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card border-0">
-              <img
-                src={serviceImg2}
-                className="card-img-top rounded-3"
-                alt="service2"
-              />
-              <div className="card-body  shadow-sm">
-                <h5 className="card-title fw-bold pt-3">Alternate Energy</h5>
-                <hr className="dashed-line" />
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <Link to="/services" className="btn read-more">
-                  READ MORE
-                  <hr />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card border-0">
-              <img
-                src={serviceImg3}
-                className="card-img-top rounded-3"
-                alt="service3"
-              />
-              <div className="card-body  shadow-sm">
-                <h5 className="card-title fw-bold pt-3">Chemical Research</h5>
-                <hr className="dashed-line" />
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <Link to="/services" className="btn read-more">
-                  READ MORE
-                  <hr />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
