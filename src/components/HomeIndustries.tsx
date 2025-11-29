@@ -3,13 +3,13 @@ import serviceImg1 from "/images/sample1.webp";
 import serviceImg2 from "/images/sample2.webp";
 import serviceImg3 from "/images/sample3.webp";
 
-const HomeServices = () => {
+const HomeIndustries = () => {
   return (
     <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-yellow-600 text-lg font-semibold tracking-wide">
+          <h2 className="text-yellow-500 text-lg font-semibold tracking-wide">
             WHAT WE DO
           </h2>
 
@@ -18,9 +18,8 @@ const HomeServices = () => {
           </h3>
 
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            fuga doloribus, molestias quod facere ex illo delectus dolores
-            beatae enim nulla totam rerum qui rem eveniet voluptate cupiditate!
+            Experience exceptional Custom Clearing , warehousing and logistics
+            services driven by an operationally excellent DNA.
           </p>
         </div>
 
@@ -74,4 +73,4 @@ const HomeServices = () => {
   );
 };
 
-export default HomeServices;
+export default HomeIndustries;

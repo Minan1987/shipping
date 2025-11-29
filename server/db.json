@@ -2,21 +2,72 @@
   "services": [
     {
       "id": 1,
-      "title": "Sea Freight",
-      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...",
-      "image": "/images/sample1.jpg"
+      "title": "Custom Clearance",
+      "image": "/images/services/image1.webp",
+      "icon": "/images/services/icon1.png",
+      "desc": "Efficient and reliable customs clearance services ensuring smooth cargo movement across borders."
     },
     {
       "id": 2,
-      "title": "Air Freight",
-      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...",
-      "image": "/images/sample2.jpg"
+      "title": "International Freight Forwarding",
+      "image": "/images/services/image2.webp",
+      "icon": "/images/services/icon2.png",
+      "desc": "Professional air, sea and road freight forwarding solutions for global shipments."
     },
     {
       "id": 3,
-      "title": "Road Freight",
-      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...",
-      "image": "/images/sample3.jpg"
+      "title": "Logistics & Supply Chain Management",
+      "image": "/images/services/image3.webp",
+      "icon": "/images/services/icon3.png",
+      "desc": "Complete logistics solutions designed for optimal supply chain performance and visibility."
+    },
+    {
+      "id": 4,
+      "title": "Warehousing & Distribution",
+      "image": "/images/services/image4.webp",
+      "icon": "/images/services/icon4.png",
+      "desc": "Secure warehouses with professional inventory handling, storage, and distribution services."
+    },
+    {
+      "id": 5,
+      "title": "Air Cargo Services",
+      "image": "/images/services/image5.webp",
+      "icon": "/images/services/icon5.png",
+      "desc": "Fast and secure air freight solutions tailored for urgent and high-value shipments."
+    },
+    {
+      "id": 6,
+      "title": "Sea Cargo Services",
+      "image": "/images/services/image6.webp",
+      "icon": "/images/services/icon6.png",
+      "desc": "Cost-effective sea freight options for bulk and large-volume international cargo."
+    },
+    {
+      "id": 7,
+      "title": "Door to Door Delivery",
+      "image": "/images/services/image7.webp",
+      "icon": "/images/services/icon7.png",
+      "desc": "Convenient and secure door-to-door delivery ensuring full handling from pickup to final destination."
+    },
+    {
+      "id": 8,
+      "image": "/images/services/image8.webp",
+      "icon": "/images/services/icon8.png",
+      "desc": "Professionally engineered packing and crating for fragile, heavy, and international cargo."
+    },
+    {
+      "id": 9,
+      "title": "Cargo Insurance",
+      "image": "/images/services/image9.webp",
+      "icon": "/images/services/icon9.png",
+      "desc": "Comprehensive cargo insurance to protect shipment value during transit."
+    },
+    {
+      "id": 10,
+      "title": "Project Cargo Handling",
+      "image": "/images/services/image10.webp",
+      "icon": "/images/services/icon10.png",
+      "desc": "Specialized handling of oversized, heavy-lift and industrial project cargo worldwide."
     }
   ],
   "clients": [
