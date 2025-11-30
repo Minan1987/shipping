@@ -37,7 +37,7 @@ const HomePage = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shipping">
       <header>
         <TopHeader />
         <Menu />

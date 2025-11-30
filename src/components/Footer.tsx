@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "/images/logo.jpeg";
+import logo from "/images/logo.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaTwitter, FaFacebook, FaSkype, FaPinterestP } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
@@ -128,18 +128,18 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <ImLocation className="mt-1 text-xl" />
                 <span>
-                  Lorance 502B, Tailstoi Town 5048 MT, Worldwide Country
+                  24 gloucester avenue, Manchester, M45 6BX, UNITED KINGDOM
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <MdPhone className="text-xl" />
-                <span>18004567890</span>
+                <span>0845 825 4390</span>
               </li>
 
               <li className="flex items-center gap-3">
                 <MdOutlineMailOutline className="text-xl" />
-                <span>sales@mdglobal.com</span>
+                <span>info@mdgloballogistic.com</span>
               </li>
 
               <li className="flex items-center gap-3">

@@ -1,36 +1,18 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-type featuredServices = {
-  id: number;
-  title: string;
-  image: string;
-  icon: string;
-  desc: string;
-  featured: boolean;
-};
+import icon11 from "/images/services/icon11.png";
+import icon12 from "/images/services/icon12.png";
+import icon13 from "/images/services/icon13.png";
+import icon14 from "/images/services/icon14.png";
+import icon15 from "/images/services/icon15.png";
 
 const FeaturesdServices = () => {
-  const [featuredServices, setFeaturedServices] = useState<featuredServices[]>(
-    []
-  );
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("http://localhost:9000/services?featured=true");
-        const data = await res.json();
-        setFeaturedServices(data);
-      } catch (err) {
-        console.error("Error Messag:", err);
-      }
-    };
-    fetchData();
-  }, []);
-
-  if (!featuredServices) {
-    return <div>loading...</div>;
-  }
+  const items = [
+    { img: icon11, title: "Dangerous Goods" },
+    { img: icon12, title: "Project Logistics" },
+    { img: icon13, title: "Charter Services" },
+    { img: icon14, title: "Out of Gauge" },
+    { img: icon15, title: "Hand Carry" },
+  ];
 
   return (
     <section className="py-16">
@@ -44,21 +26,21 @@ const FeaturesdServices = () => {
 
         {/* ICONS */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 text-center">
-          {featuredServices.map((service) => (
+          {items.map((item, i) => (
             <Link
-              key={service.id}
+              key={i}
               to="/"
               className="bg-yellow-500 group rounded-[10px] p-3 shadow-[0_2px_6px_rgba(234,179,8,0.5)]  transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
             >
               <div className="text-center">
                 <img
-                  src={service.icon}
-                  alt={service.title}
+                  src={item.img}
+                  alt={item.title}
                   className="mx-auto transition-transform duration-300 ease-out group-hover:scale-[1.15] max-h-20"
                 />
 
                 <h6 className="font-semibold text-lg text-white mt-2">
-                  {service.title}
+                  {item.title}
                 </h6>
               </div>
             </Link>
