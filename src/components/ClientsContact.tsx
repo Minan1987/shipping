@@ -18,14 +18,8 @@ const ClientsContact = () => {
               <h2 className="text-lg text-gray-600">WE WORK GLOBALLY</h2>
               <h3 className="text-4xl font-bold">Our Accreditations</h3>
             </div>
-            {/* 
-            <p className="text-gray-500 mb-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              consequuntur voluptate eaque dolor officia possimus iusto iste,
-              sed molestias officiis accusantium neque pariatur!
-            </p> */}
 
-            {/* Clients Logos Grid */}
+            {/* Accreditations Logos Grid */}
             <div className="grid grid-cols-3 gap-4">
               <img
                 src={img1}

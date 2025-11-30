@@ -20,8 +20,9 @@ const Footer = () => {
             </Link>
 
             <p className="text-[#7f92a7] leading-6 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We are an award winning international freight company with
+              customer service at our core. Whatever you to need to transport,
+              wherever in the world, we’re here to assist you.
             </p>
 
             <Link
@@ -63,16 +64,16 @@ const Footer = () => {
           {/* --- Column 2 --- */}
           <div>
             <h3 className="text-white text-lg mb-5 font-semibold border-b border-gray-700 pb-2">
-              Our Solutions
+              Shipping for Businesses
             </h3>
             <ul className="space-y-2">
               {[
-                "Power And Energy",
-                "Oil And Lubricant",
-                "Material Engineering",
-                "Mechanical Engineering",
-                "Chemical Research",
-                "Alternate Energy",
+                "Our Services",
+                "Specialist",
+                "Industry",
+                "Request a Quote",
+                "Resources",
+                "DataNet",
               ].map((item) => (
                 <li key={item}>
                   <Link to="/" className="hover:text-blue-300 transition block">
@@ -86,32 +87,32 @@ const Footer = () => {
           {/* --- Column 3 --- */}
           <div>
             <h3 className="text-white text-lg mb-5 font-semibold border-b border-gray-700 pb-2">
-              Quick Links
+              Shipping for Individuals
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about-us" className="hover:text-blue-300">
-                  - About Us
+                  - How It Works
                 </Link>
               </li>
               <li>
                 <Link to="/news" className="hover:text-blue-300">
-                  - News
+                  - Services
                 </Link>
               </li>
               <li>
                 <Link to="/" className="hover:text-blue-300">
-                  - Testimonial
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="hover:text-blue-300">
-                  - Request A Quote
+                  - Destinations
                 </Link>
               </li>
               <li>
                 <Link to="/" className="hover:text-blue-300">
                   - FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="hover:text-blue-300">
+                  - Testimonials
                 </Link>
               </li>
             </ul>
@@ -138,7 +139,7 @@ const Footer = () => {
 
               <li className="flex items-center gap-3">
                 <MdOutlineMailOutline className="text-xl" />
-                <span>info@industrial.com</span>
+                <span>sales@mdglobal.com</span>
               </li>
 
               <li className="flex items-center gap-3">
@@ -153,7 +154,7 @@ const Footer = () => {
       {/* --- Bottom Bar --- */}
       <div className="bg-[#09121e] py-4 mt-5">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between text-center text-gray-400 text-sm">
-          <p>Copyright © 2024 Industrial WP Demo. All rights reserved.</p>
+          <p>Copyright © 2025 MD Global Logistic. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Developed by Mina Nazari</p>
         </div>
       </div>
