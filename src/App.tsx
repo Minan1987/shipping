@@ -17,7 +17,7 @@ import {
   BlueContactSection,
   RequestQuote,
 } from "./components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -37,7 +37,7 @@ const HomePage = () => {
 
 const App = () => {
   return (
-    <BrowserRouter basename="/shipping">
+    <HashRouter basename="/shipping">
       <header>
         <TopHeader />
         <Menu />
@@ -53,7 +53,7 @@ const App = () => {
         <Route path="/search" element={<SearchResult />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
