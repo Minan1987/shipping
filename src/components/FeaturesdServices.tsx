@@ -54,10 +54,10 @@ const FeaturesdServices = () => {
                 <img
                   src={service.icon}
                   alt={service.title}
-                  className=" w-16 mx-auto transition-transform duration-300 ease-out group-hover:scale-[1.15]"
+                  className="mx-auto transition-transform duration-300 ease-out group-hover:scale-[1.15] max-h-20"
                 />
 
-                <h6 className="font-semibold text-sm text-white mt-2">
+                <h6 className="font-semibold text-lg text-white mt-2">
                   {service.title}
                 </h6>
               </div>

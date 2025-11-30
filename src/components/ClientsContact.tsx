@@ -1,10 +1,10 @@
 import ContactFrom from "./ContactFrom";
-import img1 from "/images/icon6.png";
-import img2 from "/images/icon5.png";
-import img3 from "/images/icon4.png";
-import img4 from "/images/icon9.png";
-import img5 from "/images/icon8.png";
-import img6 from "/images/icon7.png";
+import img1 from "/images/icon6.jpg";
+import img2 from "/images/icon5.jpg";
+import img3 from "/images/icon4.jpg";
+import img4 from "/images/icon9.jpg";
+import img5 from "/images/icon8.jpg";
+import img6 from "/images/icon7.jpg";
 
 const ClientsContact = () => {
   return (

@@ -49,26 +49,28 @@ const Services = () => {
         </div>
 
         {/* ICONS */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 text-center">
-          {services.map((service) => (
-            <Link
-              key={service.id}
-              to="/"
-              className="group rounded-[10px] p-3 shadow-[0_2px_6px_rgba(234,179,8,0.5)] transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
-            >
-              <div className="text-center">
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className=" w-16 mx-auto transition-transform duration-300 ease-out group-hover:scale-[1.15]"
-                />
+        <div className="container">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 text-center ">
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                to="/"
+                className="group rounded-[10px] p-3 shadow-[0_2px_5px_0_rgba(142,154,173,.6)] transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
+              >
+                <div className="text-center">
+                  <img
+                    src={service.icon}
+                    alt={service.title}
+                    className="mx-auto transition-transform duration-300 ease-out group-hover:scale-[1.15] max-h-20"
+                  />
 
-                <h6 className="font-semibold text-sm text-gray-700 mt-2">
-                  {service.title}
-                </h6>
-              </div>
-            </Link>
-          ))}
+                  <h6 className="font-semibold text-lg text-yellow-500 mt-2">
+                    {service.title}
+                  </h6>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

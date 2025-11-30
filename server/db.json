@@ -2,7 +2,7 @@
   "services": [
     {
       "id": 1,
-      "title": "Custom Clearance",
+      "title": "Sea Freight",
       "image": "/images/services/image1.webp",
       "icon": "/images/services/icon1.png",
       "desc": "Efficient and reliable customs clearance services ensuring smooth cargo movement across borders.",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "International Freight Forwarding",
+      "title": "Air Freight",
       "image": "/images/services/image2.webp",
       "icon": "/images/services/icon2.png",
       "desc": "Professional air, sea and road freight forwarding solutions for global shipments.",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "Logistics & Supply Chain Management",
+      "title": "Road Freight",
       "image": "/images/services/image3.webp",
       "icon": "/images/services/icon3.png",
       "desc": "Complete logistics solutions designed for optimal supply chain performance and visibility.",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "Warehousing & Distribution",
+      "title": "Courier and Express",
       "image": "/images/services/image4.webp",
       "icon": "/images/services/icon4.png",
       "desc": "Secure warehouses with professional inventory handling, storage, and distribution services.",
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "title": "Air Cargo Services",
+      "title": "Import Servicess",
       "image": "/images/services/image5.webp",
       "icon": "/images/services/icon5.png",
       "desc": "Fast and secure air freight solutions tailored for urgent and high-value shipments.",
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "title": "Sea Cargo Services",
+      "title": "Customs Clearance",
       "image": "/images/services/image6.webp",
       "icon": "/images/services/icon6.png",
       "desc": "Cost-effective sea freight options for bulk and large-volume international cargo.",
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "title": "Door to Door Delivery",
+      "title": "Export Services",
       "image": "/images/services/image7.webp",
       "icon": "/images/services/icon7.png",
       "desc": "Convenient and secure door-to-door delivery ensuring full handling from pickup to final destination.",
@@ -58,6 +58,7 @@
     },
     {
       "id": 8,
+      "title": "Documentation",
       "image": "/images/services/image8.webp",
       "icon": "/images/services/icon8.png",
       "desc": "Professionally engineered packing and crating for fragile, heavy, and international cargo.",
@@ -65,7 +66,7 @@
     },
     {
       "id": 9,
-      "title": "Cargo Insurance",
+      "title": "Warehousing",
       "image": "/images/services/image9.webp",
       "icon": "/images/services/icon9.png",
       "desc": "Comprehensive cargo insurance to protect shipment value during transit.",
@@ -73,7 +74,7 @@
     },
     {
       "id": 10,
-      "title": "Project Cargo Handling",
+      "title": "Freight Packaging",
       "image": "/images/services/image10.webp",
       "icon": "/images/services/icon10.png",
       "desc": "Specialized handling of oversized, heavy-lift and industrial project cargo worldwide.",
