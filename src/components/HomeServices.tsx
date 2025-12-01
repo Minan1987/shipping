@@ -1,6 +1,4 @@
-import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-1.jpg";
-
+import { Link } from "react-router-dom";
 import icon1 from "/images/services/icon1.png";
 import icon2 from "/images/services/icon2.png";
 import icon3 from "/images/services/icon3.png";
@@ -11,9 +9,8 @@ import icon7 from "/images/services/icon7.png";
 import icon8 from "/images/services/icon8.png";
 import icon9 from "/images/services/icon9.png";
 import icon10 from "/images/services/icon10.png";
-import { Link } from "react-router-dom";
 
-const Services = () => {
+const HomeServices = () => {
   const items = [
     { img: icon1, title: "Sea Freight" },
     { img: icon2, title: "Air Freight" },
@@ -28,13 +25,22 @@ const Services = () => {
   ];
 
   return (
-    <div className=" mx-auto mt-[168px]">
-      <img src={banner} className="w-full h-[135px]" />
-      <div className="container mx-auto  px-4 lg:px-20 xl:px-40">
-        <Breadcrumb />
+    <section className="py-16">
+      {/* TOP TEXT SECTION */}
+      <div className="container mx-auto px-4 lg:px-20 xl:px-40">
+        <div className="text-center max-w-3xl mx-auto ">
+          <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-500 w-64 pb-2">
+            Our Core Services
+          </h2>
+
+          <h3 className="text-sm md:text-md  mt-4 text-gray-500 leading-normal">
+            Experience exceptional Custom Clearing , warehousing and logistics
+            services driven by an operationally excellent DNA.
+          </h3>
+        </div>
 
         {/* ICONS */}
-        <div className="container pb-16">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 text-center ">
             {items.map((item, i) => (
               <Link
@@ -58,8 +64,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Services;
+export default HomeServices;

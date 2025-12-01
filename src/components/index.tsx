@@ -4,6 +4,7 @@ export { default as Slider } from "./Slider";
 export { default as RequestQuote } from "./RequestQuote";
 export { default as AboutUs } from "./AboutUs";
 export { default as Services } from "./Services";
+export { default as HomeServices } from "./HomeServices";
 export { default as YellowContactBar } from "./YellowContactBar";
 export { default as Industries } from "./Industries";
 export { default as Projects } from "./Projects";

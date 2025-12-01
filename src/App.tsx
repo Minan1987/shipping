@@ -5,10 +5,10 @@ import {
   Footer,
   ContactUs,
   AboutUs,
-  Services,
+  HomeServices,
   News,
   YellowContactBar,
-  Industries,
+  Services,
   Shop,
   Projects,
   HomeIndustries,
@@ -27,7 +27,7 @@ const HomePage = () => {
         <Slider />
         <RequestQuote />
       </div>
-      <Services />
+      <HomeServices />
       <FeaturesdServices />
       <YellowContactBar />
       <HomeIndustries />
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/services" element={<Industries />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/news" element={<News />} />
         <Route path="/shop" element={<Shop />} />
