@@ -1,31 +1,76 @@
+import { Link } from "react-router-dom";
+import Breadcrumb from "./Breadcrumb";
+import banner from "/images/band-1.jpg";
+
 const AboutUs = () => {
   return (
-    <div className="container p-5">
-      <h1>About Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae
-        nostrum dignissimos illum eius libero impedit saepe tempore, at tempora
-        sapiente et totam expedita labore ut dolores explicabo! Eveniet, eum
-        consequatur consequuntur quam id ratione? Ea blanditiis pariatur
-        laboriosam magni amet ad voluptas culpa dignissimos iure, tempore ut
-        eligendi quam dolorum optio vel! Totam veritatis odit, officia saepe
-        consequuntur modi iusto sed quos ab eligendi deserunt omnis id molestiae
-        asperiores officiis iure? Ad dignissimos laborum porro! Sit earum odio
-        eligendi repellat consectetur voluptatibus soluta temporibus recusandae.
-        Sed excepturi in quibusdam esse, dolor nesciunt odit tempore,
-        reprehenderit neque earum adipisci dolorem assumenda obcaecati unde fuga
-        temporibus magnam maiores atque. Maiores repudiandae aut illo
-        reprehenderit accusamus? Magnam nesciunt ducimus minus eligendi vel
-        incidunt dolores aliquam blanditiis doloremque hic quos iure cumque
-        minima aspernatur possimus laborum, illo odio explicabo harum ab aut quo
-        officiis. Facilis recusandae aspernatur quia natus maiores! Beatae
-        perspiciatis hic, nemo voluptatibus in quis veniam esse ipsa dicta
-        nesciunt accusamus laboriosam harum ad dolore libero exercitationem
-        architecto officia similique sapiente maiores sed modi. Fuga pariatur
-        ipsam tempora, temporibus, voluptates veniam alias aliquam odio ducimus
-        illum commodi facilis omnis quod possimus! Inventore, exercitationem
-        accusamus recusandae ratione ipsum tempora id quo tenetur.
-      </p>
+    <div className=" mx-auto mt-[168px]">
+      <img src={banner} className="w-full h-[135px]" />
+      <div className="container mx-auto  px-4 lg:px-20 xl:px-40">
+        <Breadcrumb />
+        <h1 className="underline decoration-yellow-500 text-lg md:text-xl lg:text-3xl font-bold my-6">
+          Our objective at MD International Freight is simple – to provide a
+          first-class service for businesses and individuals that require a
+          professional international shipping service.
+        </h1>
+        <p className="text-md mb-8 leading-relaxed">
+          MD Global Logistics is a leading provider of custom clearing and
+          freight forwarding services, renowned for our commitment to excellence
+          and reliability in global trade logistics. With a wealth of experience
+          and a customer-centric approach, we streamline international shipping
+          processes to empower businesses to thrive in the global marketplace.
+          <br />
+          <br /> Ever since our inception, we have always worked with our
+          Customers in complete understanding of your needs and tailoring our
+          services to deliver Safe & Timely Delivery of shipments. Our success
+          and Growth stems from the fact that we never take our customer
+          requirements lightly. The moment a shipment is booked, we start our
+          planning process based on how best we can complete it within the
+          shortest frame of time, economical to the Customer and Most important
+          Safety of Shipment.
+        </p>
+        <div className="text-center max-w-6xl mx-auto">
+          <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-400 w-80 pb-2 mb-6">
+            CEO Message
+          </h2>
+        </div>
+        <p className="text-md mb-3 leading-relaxed">
+          To continue in business we must look ahead, understand the trends,
+          dynamics and forces holistically and in realistic terms. To make a
+          sizable presence in future we must understand everything that will
+          shape our business in times to come and to make it good we are
+          committed to get ourselves ready for tomorrow, today.
+        </p>
+        <p className="text-md mb-3 leading-relaxed">
+          <span className="text-blue-950 font-semibold">
+            MD Global Logistics
+          </span>
+          , as cohesive team, is committed to systematically manage logistics by
+          continuously defining, monitoring and improving performance.
+        </p>
+
+        <p className="text-md mb-3 leading-relaxed">
+          Our vision servers as basic framework for our future endeavors and can
+          be best summarized as to assist demanding, but responsible, clients in
+          achieving their business objectives through our dedication,
+          professionalism, responsiveness and shear enthusiasm. We are well
+          committed to meet and exceed our client’s expectations – every time,
+          anytime.
+        </p>
+        <p className="text-md mb-3 leading-relaxed">
+          We value our business partners by adhering to the highest ethical
+          standards and following above the board business practices. It is our
+          endeavor to extended service of highest standards to our valued
+          clients and become acknowledged partners in their success stories.
+        </p>
+        <p className="text-md mb-14 leading-relaxed">
+          <span className="text-blue-950 font-semibold">
+            MD Global Logistics
+          </span>{" "}
+          shall be looking forward to serve you comprehensively in your all
+          logistics requirements.
+        </p>
+      </div>
     </div>
   );
 };

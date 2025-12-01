@@ -67,7 +67,8 @@ const HomeIndustries = () => {
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            992: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           navigation={true}
           loop={true}
@@ -90,7 +91,9 @@ const HomeIndustries = () => {
                 />
 
                 <div className="p-5">
-                  <h5 className="font-bold text-xl pt-2">{item.title}</h5>
+                  <h5 className="font-bold text-xl pt-2 truncate">
+                    {item.title}
+                  </h5>
 
                   <hr className="border-dashed my-3" />
 

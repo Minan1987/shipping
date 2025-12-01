@@ -32,7 +32,6 @@ const HomePage = () => {
       <YellowContactBar />
       <HomeIndustries />
       <ClientsContact />
-      <BlueContactSection />
     </>
   );
 };
@@ -54,6 +53,7 @@ const App = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/search" element={<SearchResult />} />
       </Routes>
+      <BlueContactSection />
       <Footer />
     </HashRouter>
   );

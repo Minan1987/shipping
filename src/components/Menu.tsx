@@ -59,33 +59,33 @@ function Menu() {
             <li>
               <Link
                 to="/"
-                className="text-yellow-500 hover:text-yellow-400 font-bold"
+                className="text-yellow-600 hover:text-yello50000 font-bold"
               >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-yellow-400 font-bold">
+              <Link to="/about-us" className="hover:text-yellow-500 font-bold">
                 ABOUT US
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-yellow-400 font-bold">
+              <Link to="/services" className="hover:text-yellow-500 font-bold">
                 SERVICES
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="hover:text-yellow-400 font-bold">
+              <Link to="/projects" className="hover:text-yello50000 font-bold">
                 PROJECTS
               </Link>
             </li>
             <li>
-              <Link to="/news" className="hover:text-yellow-400 font-bold">
+              <Link to="/news" className="hover:text-yellow-500 font-bold">
                 NEWS
               </Link>
             </li>
             <li>
-              <Link to="/shop" className="hover:text-yellow-400 font-bold">
+              <Link to="/shop" className="hover:text-yellow-500 font-bold">
                 SHOP
               </Link>
             </li>
