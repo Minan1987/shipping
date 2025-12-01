@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const BlueContactSection = () => {
   return (
     <section className="py-4 bg-blue-900">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 lg:px-10 xl:px-40">
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-4 lg:gap-0">
           <div className="text-center lg:text-left">
             <p className="text-2xl text-white m-0">
-              If You Need Any Industrial Solution... We Are Available For You
+              We provide 24/7 support for smooth and efficient goods movement.
             </p>
           </div>
 
