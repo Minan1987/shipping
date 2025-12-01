@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <section className="py-16">
       {/* TOP TEXT SECTION */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 lg:px-20 xl:px-40">
         <div className="text-center max-w-3xl mx-auto ">
           <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-500 w-64 pb-2">
             Our Core Services

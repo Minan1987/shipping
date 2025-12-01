@@ -7,6 +7,7 @@ import {
   AboutUs,
   Services,
   News,
+  YellowContactBar,
   Industries,
   Shop,
   Projects,
@@ -28,6 +29,7 @@ const HomePage = () => {
       </div>
       <Services />
       <FeaturesdServices />
+      <YellowContactBar />
       <HomeIndustries />
       <ClientsContact />
       <BlueContactSection />
@@ -37,7 +39,7 @@ const HomePage = () => {
 
 const App = () => {
   return (
-    <HashRouter basename="/shipping">
+    <HashRouter>
       <header>
         <TopHeader />
         <Menu />

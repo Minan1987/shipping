@@ -8,13 +8,13 @@ import img6 from "/images/accreditations/acc6.jpg";
 
 const ClientsContact = () => {
   return (
-    <section className="mb-5">
-      <div className="container mx-auto px-4">
+    <section className="mb-16">
+      <div className="container mx-auto px-4 lg:px-20 xl:px-40">
         {/* Parent Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* LEFT - Clients */}
-          <div className="clients lg:pr-10">
-            <div className="title mb-8">
+          <div className="clients lg:pr-8">
+            <div className="title mb-4">
               <h2 className="text-lg text-gray-600">WE WORK GLOBALLY</h2>
               <h3 className="text-4xl font-bold">Our Accreditations</h3>
             </div>
