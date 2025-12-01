@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "/images/mdglobal-logo.png";
+import logo from "/images/logo.png";
 import Search from "./Search";
 import { CiSearch } from "react-icons/ci";
 
@@ -14,7 +14,7 @@ function Menu() {
         {/* Logo */}
         <div className="w-fit">
           <Link to="/">
-            <img src={logo} alt="MD Global Logestic" className="h-20" />
+            <img src={logo} alt="MD Global Logestic" className="h-28 z-10" />
           </Link>
         </div>
 
@@ -50,43 +50,50 @@ function Menu() {
 
         {/* Menu Items */}
         <div
-          className={`w-full bg-neutral-50 absolute lg:static top-28 text-center left-0 lg:bg-transparent lg:flex lg:w-fit lg:items-center lg:justify-between ${
+          className={`w-screen bg-neutral-50 absolute lg:static text-center  right-0 lg:bg-transparent lg:flex lg:w-fit lg:items-center lg:justify-between ${
             isOpenMenu ? "block" : "hidden"
           }`}
+          style={{ top: "119px" }}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 mt-4 lg:mt-0">
             <li>
-              <Link to="/" className="text-yellow-500 hover:text-yellow-400">
+              <Link
+                to="/"
+                className="text-yellow-500 hover:text-yellow-400 font-bold"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-yellow-400">
+              <Link to="/about-us" className="hover:text-yellow-400 font-bold">
                 ABOUT US
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-yellow-400">
+              <Link to="/services" className="hover:text-yellow-400 font-bold">
                 SERVICES
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="hover:text-yellow-400">
+              <Link to="/projects" className="hover:text-yellow-400 font-bold">
                 PROJECTS
               </Link>
             </li>
             <li>
-              <Link to="/news" className="hover:text-yellow-400">
+              <Link to="/news" className="hover:text-yellow-400 font-bold">
                 NEWS
               </Link>
             </li>
             <li>
-              <Link to="/shop" className="hover:text-yellow-400">
+              <Link to="/shop" className="hover:text-yellow-400 font-bold">
                 SHOP
               </Link>
             </li>
             <li>
-              <Link to="/contact-us" className="hover:text-yellow-400">
+              <Link
+                to="/contact-us"
+                className="hover:text-yellow-400 font-bold"
+              >
                 CONTACT US
               </Link>
             </li>
@@ -111,10 +118,11 @@ function Menu() {
       {/* Search Dropdown (Animated) */}
       <div
         className={`
-            absolute left-0 w-full bg-white shadow-lg overflow-hidden
-            transition-all duration-300 ease-out
+            absolute left-0 w-full bg-neutral-100 shadow-lg overflow-hidden
+            transition-all duration-300 ease-out  
             ${isOpenSearch ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
           `}
+        style={{ top: "119px" }}
       >
         <div className="container mx-auto flex justify-center items-center px-4 py-4">
           <Search />

@@ -1,9 +1,45 @@
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
 import serviceImg1 from "/images/sample1.webp";
 import serviceImg2 from "/images/sample2.webp";
 import serviceImg3 from "/images/sample3.webp";
+import serviceImg4 from "/images/sample4.webp";
+import serviceImg5 from "/images/sample5.webp";
 
 const HomeIndustries = () => {
+  const items = [
+    {
+      img: serviceImg1,
+      title: "Technology",
+      desc: "We understand the unique logistical challenges faced by companies in the technology sector, where precision, speed, and reliability are paramount. As a leading freight forwarding business, we offer tailored solutions to facilitate the seamless movement of your technology products worldwide, whether by air, sea, or road.",
+    },
+    {
+      img: serviceImg2,
+      title: "Manufacturing",
+      desc: "MD Global Freight manage the supply chain movements of many large international manufacturing companies. Our team appreciate the complex issues and unique logistical challenges facing this sector.",
+    },
+    {
+      img: serviceImg3,
+      title: "Chemical",
+      desc: "The chemical goods industry has experienced significant changes over recent years with a much larger emphasis being placed on logistics compliance and regulation. MD provide businesses with specialist chemical logistics advice and guidance.",
+    },
+    {
+      img: serviceImg4,
+      title: "Energy",
+      desc: "We have been providing logistics services to the oil and gas industry for many years. Our specialist team have worked on many projects across the world and understand the demands of this sector more than most.",
+    },
+    {
+      img: serviceImg5,
+      title: "Exhibitions & Events",
+      desc: "When fast reactions and quick solutions are required, you can count on MD Global Freight to provide a dedicated team and exceptional service to help make your event a resounding success.",
+    },
+  ];
+
   return (
     <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
@@ -23,51 +59,55 @@ const HomeIndustries = () => {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          {[serviceImg1, serviceImg2, serviceImg3].map((img, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100"
-            >
-              {/* Image */}
-              <img
-                src={img}
-                className="w-full h-60 object-cover rounded-t-lg"
-                alt={`service${i + 1}`}
-              />
+        {/* Slider */}
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          navigation={true}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          className="mt-10"
+        >
+          {items.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div
+                key={i}
+                className="bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100"
+              >
+                <img
+                  src={item.img}
+                  className="w-full h-60 object-cover rounded-t-lg"
+                  alt={item.title}
+                />
 
-              {/* Card Body */}
-              <div className="p-5">
-                <h5 className="font-bold text-xl pt-2">
-                  {i === 0
-                    ? "Agricaltural Processing"
-                    : i === 1
-                    ? "Alternate Energy"
-                    : "Chemical Research"}
-                </h5>
+                <div className="p-5">
+                  <h5 className="font-bold text-xl pt-2">{item.title}</h5>
 
-                {/* Dashed line */}
-                <hr className="border-dashed my-3" />
+                  <hr className="border-dashed my-3" />
 
-                <p className="text-gray-600">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title.
-                </p>
+                  <p className="text-gray-600 line-clamp-3">{item.desc}</p>
 
-                {/* Read More */}
-                <Link
-                  to="/services"
-                  className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
-                >
-                  READ MORE
-                  <hr className="border-yellow-600 mt-1 w-20" />
-                </Link>
+                  <Link
+                    to="/services"
+                    className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
+                  >
+                    READ MORE
+                    <hr className="border-yellow-600 mt-1 w-20" />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );

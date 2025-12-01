@@ -1,34 +1,5 @@
 @import "tailwindcss";
 
-/* Navbar */
-
-/* @media (min-width: 992px) {
-  .navbar ul {
-    position: relative;
-  }
-
-  .navbar-nav .nav-item {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    padding: 0 10px;
-  }
-
-  .navbar-nav .nav-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    border-right: 1px dotted #4b6a87;
-  }
-
-  .navbar-nav .nav-item:last-child::after {
-    border-right: none;
-  }
-} */
-
 /* Slider */
 .slider {
   height: 642px;
