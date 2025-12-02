@@ -9,6 +9,7 @@ import {
   News,
   YellowContactBar,
   Services,
+  ServiceDetails,
   Shop,
   Projects,
   HomeIndustries,
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<ServiceDetails />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/news" element={<News />} />
         <Route path="/shop" element={<Shop />} />

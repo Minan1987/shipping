@@ -39,7 +39,7 @@ const Services = () => {
             {items.map((item, i) => (
               <Link
                 key={i}
-                to="/"
+                to={`/services/${item.title.toLowerCase().replace(/ /g, "-")}`}
                 className="group rounded-[10px] p-3 shadow-[0_2px_5px_0_rgba(142,154,173,.6)] transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
               >
                 <div className="text-center">

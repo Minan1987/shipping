@@ -3,8 +3,8 @@ import banner from "/images/band-1.jpg";
 
 const AboutUs = () => {
   return (
-    <div className=" mx-auto mt-[168px]">
-      <img src={banner} className="w-full h-[135px]" />
+    <div className=" mx-auto ">
+      <img src={banner} className="w-full h-full" />
       <div className="container mx-auto  px-4 lg:px-20 xl:px-40">
         <Breadcrumb />
         <h1 className="underline decoration-yellow-500 text-lg md:text-xl lg:text-3xl font-bold my-6">
