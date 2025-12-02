@@ -3,7 +3,25 @@ import airBanner from "/images/services/image2.webp";
 import roadBanner from "/images/services/image3.webp";
 import CourierAndExpress from "/images/services/image4.webp";
 
-export const servicesData = {
+export interface ServiceSection {
+  title: string;
+  text?: string;
+  list?: string[]; // optional
+}
+
+export interface ServiceDataItem {
+  title: string;
+  banner: string;
+  intro: string;
+  description: string[];
+  sections: ServiceSection[];
+}
+
+export interface ServicesData {
+  [slug: string]: ServiceDataItem;
+}
+
+export const servicesData: ServicesData = {
   "sea-freight": {
     title: "Sea Freight",
     banner: seaBanner,
