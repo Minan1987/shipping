@@ -1,7 +1,7 @@
 import seaBanner from "/images/services/image1.webp";
 import airBanner from "/images/services/image2.webp";
 import roadBanner from "/images/services/image3.webp";
-import CourierAndExpress from "/images/services/image4.webp";
+// import CourierAndExpress from "/images/services/image4.webp";
 
 export interface ServiceSection {
   title: string;
