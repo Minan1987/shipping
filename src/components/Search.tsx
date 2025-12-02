@@ -20,12 +20,12 @@ const Search = () => {
         placeholder="Enter Search Keywords..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="flex-1 border border-blue-950 rounded-lg p-2 focus:outline-none"
+        className="flex-1 border border-white rounded-lg p-2 focus:outline-none"
       />
 
       <button
         type="submit"
-        className="text-2xl text-blue-950 hover:text-yellow-500 transition"
+        className="text-2xl text-gray-200 hover:text-yellow-500 transition"
       >
         <CiSearch />
       </button>

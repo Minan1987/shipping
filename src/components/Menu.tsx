@@ -9,7 +9,7 @@ function Menu() {
   const [isOpenSearch, setIsOpenSearch] = useState(false);
 
   return (
-    <nav className="fixed w-full z-10 top-12 bg-neutral-100 text-blue-950 opacity-90 py-5">
+    <nav className="fixed w-full z-10 top-12 bg-blue-950 text-white opacity-90 py-5">
       <div className="flex items-center justify-between h-20 px-4 lg:justify-center lg:gap-16">
         {/* Logo */}
         <div className="w-fit">
@@ -50,7 +50,7 @@ function Menu() {
 
         {/* Menu Items */}
         <div
-          className={`w-screen bg-neutral-50 absolute lg:static text-center  right-0 lg:bg-transparent lg:flex lg:w-fit lg:items-center lg:justify-between ${
+          className={`w-screen bg-blue-950 absolute lg:static text-center  right-0 lg:bg-transparent lg:flex lg:w-fit lg:items-center lg:justify-between ${
             isOpenMenu ? "block" : "hidden"
           }`}
           style={{ top: "119px" }}
@@ -59,40 +59,40 @@ function Menu() {
             <li>
               <Link
                 to="/"
-                className="text-yellow-600 hover:text-yello50000 font-bold"
+                className="text-yellow-600 hover:text-yellow-600 font-bold"
               >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-yellow-500 font-bold">
+              <Link to="/about-us" className="hover:text-yellow-600 font-bold">
                 ABOUT US
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-yellow-500 font-bold">
+              <Link to="/services" className="hover:text-yellow-600 font-bold">
                 SERVICES
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="hover:text-yello50000 font-bold">
+              <Link to="/projects" className="hover:text-yellow-600 font-bold">
                 PROJECTS
               </Link>
             </li>
             <li>
-              <Link to="/news" className="hover:text-yellow-500 font-bold">
+              <Link to="/news" className="hover:text-yellow-600 font-bold">
                 NEWS
               </Link>
             </li>
             <li>
-              <Link to="/shop" className="hover:text-yellow-500 font-bold">
+              <Link to="/shop" className="hover:text-yellow-600 font-bold">
                 SHOP
               </Link>
             </li>
             <li>
               <Link
                 to="/contact-us"
-                className="hover:text-yellow-400 font-bold"
+                className="hover:text-yellow-600 font-bold"
               >
                 CONTACT US
               </Link>
@@ -118,7 +118,7 @@ function Menu() {
       {/* Search Dropdown (Animated) */}
       <div
         className={`
-            absolute left-0 w-full bg-neutral-100 shadow-lg overflow-hidden
+            absolute left-0 w-full bg-blue-950 shadow-lg overflow-hidden
             transition-all duration-300 ease-out  
             ${isOpenSearch ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
           `}
