@@ -26,7 +26,7 @@ const Breadcrumb = () => {
                   <Link to={routeTo} className="text-blue-600 hover:underline">
                     {name.replace("-", " ")}
                   </Link>
-                  <span className="mx-2">/</span>
+                  <span className="mx-2">{">"}</span>
                 </>
               ) : (
                 <span className="text-gray-500">{name.replace("-", " ")}</span>
