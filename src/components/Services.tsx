@@ -28,8 +28,8 @@ const Services = () => {
   ];
 
   return (
-    <div className=" mx-auto mt-[168px]">
-      <img src={banner} className="w-full h-[135px]" />
+    <div className=" mx-auto">
+      <img src={banner} className="w-full h-full" />
       <div className="container mx-auto  px-4 lg:px-20 xl:px-40">
         <Breadcrumb />
 

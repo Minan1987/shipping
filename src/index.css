@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+a {
+  text-decoration: none;
+  color: #f0b100;
+}
 /* Slider */
 .swiper-button-next::after,
 .swiper-button-prev::after {

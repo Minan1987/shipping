@@ -43,9 +43,12 @@ const ServiceDetails = () => {
   return (
     <div className="mx-auto">
       {/* Dynamic Banner */}
-      <img src={data.banner} className="w-full h-full" />
+      <img
+        src={data.banner}
+        className="w-full h-full min-h-[350px] object-cover"
+      />
 
-      <div className="container mx-auto px-4 lg:px-20 xl:px-40">
+      <div className="container mx-auto px-4 lg:px-20 xl:px-40 ">
         <Breadcrumb />
 
         {/* INTRO */}
@@ -55,7 +58,10 @@ const ServiceDetails = () => {
 
         {/* DESCRIPTION PARAGRAPHS */}
         {data.description.map((p, i) => (
-          <p key={i} className="text-md mb-5 leading-relaxed">
+          <p
+            key={i}
+            className="text-md mb-5 whitespace-pre-line leading-relaxed"
+          >
             {p}
           </p>
         ))}
@@ -63,18 +69,20 @@ const ServiceDetails = () => {
         {/* SECTIONS */}
         {data.sections.map((section, i) => (
           <div key={i} className="text-center max-w-6xl mx-auto mt-10">
-            <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-400 w-80 pb-2 mb-6">
+            <h2 className=" text-3xl font-semibold border-b-4 border-yellow-400 w-fit pb-2 mb-4">
               {section.title}
             </h2>
 
             {section.text && (
-              <p className="text-md mb-5 leading-relaxed">{section.text}</p>
+              <p className=" text-left text-md mb-5 whitespace-pre-line leading-relaxed">
+                {section.text}
+              </p>
             )}
 
             {section.list && (
               <ul className="text-left ml-5 leading-relaxed">
                 {section.list!.map((li, idx) => (
-                  <li key={idx}>- {li}</li>
+                  <li key={idx}> {li}</li>
                 ))}
               </ul>
             )}
@@ -82,7 +90,7 @@ const ServiceDetails = () => {
         ))}
       </div>
       {/* SLIDER */}
-      <div className="container p-4 text-center mx-auto">
+      <div className="container p-4 text-center mx-auto mb-6">
         <div className="text-center max-w-6xl mx-auto">
           <h2 className="mx-auto text-3xl font-semibold border-b-4 border-yellow-400 w-80 pb-2 mb-6">
             Other Services
@@ -111,7 +119,7 @@ const ServiceDetails = () => {
             <SwiperSlide key={i}>
               <div className="text-center bg-stone-600 rounded-lg shadow hover:shadow-lg transition p-4  border-2 border-yellow-500 underline decoration-amber-500 underline-offset-4">
                 {/* <img src={item.img} className="w-full " /> */}
-                <h5 className="text-white font-bold text-xl pt-2 truncate">
+                <h5 className="text-white font-bold text-xl truncate">
                   {item.title}
                 </h5>
               </div>
