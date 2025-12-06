@@ -25,7 +25,7 @@ const HomeServices = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-6 lg:py-8 xl:py-16">
       {/* TOP TEXT SECTION */}
       <div className="container mx-auto px-4 lg:px-20 xl:px-40">
         <div className="text-center max-w-3xl mx-auto ">
@@ -45,7 +45,7 @@ const HomeServices = () => {
             {items.map((item, i) => (
               <Link
                 key={i}
-                to="/"
+                to={`/services/${item.title.toLowerCase().replace(/ /g, "-")}`}
                 className="group rounded-[10px] p-3 shadow-[0_2px_5px_0_rgba(142,154,173,.6)] transition-shadow duration-300  ease-out hover:shadow-[0_0_1px_3px_#F0B100]"
               >
                 <div className="text-center">

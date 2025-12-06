@@ -24,7 +24,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col h-screen w-full">
+      <div className="flex flex-col min-h-screen w-full">
         <Slider />
         <RequestQuote />
       </div>

@@ -3,14 +3,14 @@ import bg from "/images/skyline.png";
 const RequestQuote = () => {
   return (
     <section
-      className="bg-yellow-600 py-6 relative h-1/2 bg-no-repeat  bg-auto bg-bottom"
+      className="md:min-h-[50vh] bg-yellow-600 py-6  bg-no-repeat  bg-auto bg-bottom"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <h2 className="text-center text-2xl md:text-5xl font-bold text-white mb-6 tracking-wide">
         SHIPPING FOR INDIVIDUALS
       </h2>
 
-      <div className="max-w-2xl mx-auto bg-gray-200 px-8 py-4 rounded shadow-lg">
+      <div className="m-2 md:max-w-2xl md:mx-auto bg-gray-200 px-4 md:px-8 py-4 rounded shadow-lg">
         {/* First Input */}
         <input
           type="text"

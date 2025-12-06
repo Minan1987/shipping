@@ -4,7 +4,7 @@ const YellowContactBar = () => {
   return (
     <div className="bg-yellow-500 mt-16 py-10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 w-full lg:w-4/5 mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 w-full xl:w-4/5 mx-auto">
           <p className="text-center lg:text-left text-2xl font-light">
             Looking for an logistic solution for{" "}
             <span className="font-bold">shipping your shipment</span>

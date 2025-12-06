@@ -11,7 +11,7 @@ const Breadcrumb = () => {
     >
       <ol className="list-none p-0 inline-flex">
         <li>
-          <Link to="/" className="text-yellow-500 hover:underline">
+          <Link to="/" className="text-yellow-500 ">
             Home
           </Link>
           {pathnames.length > 0 && <span className="mx-2">{">"}</span>}
@@ -23,7 +23,7 @@ const Breadcrumb = () => {
             <li key={name} className="capitalize">
               {!isLast ? (
                 <>
-                  <Link to={routeTo} className="text-blue-600 hover:underline">
+                  <Link to={routeTo} className="text-yellow-500 ">
                     {name.replace("-", " ")}
                   </Link>
                   <span className="mx-2">{">"}</span>

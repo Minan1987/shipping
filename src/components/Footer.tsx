@@ -155,7 +155,10 @@ const Footer = () => {
       <div className="bg-[#09121e] py-4 mt-5">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between text-center text-gray-400 text-sm">
           <p>Copyright © 2025 MD Global Logistic. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Developed by Mina Nazari</p>
+          <p className="mt-2 md:mt-0">
+            Developed by{" "}
+            <Link to="https://linkedin.com/in/minanazari1">Mina Nazari</Link>
+          </p>
         </div>
       </div>
     </footer>

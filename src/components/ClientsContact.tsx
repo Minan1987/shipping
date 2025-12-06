@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContactFrom from "./ContactFrom";
 import img1 from "/images/accreditations/acc1.jpg";
 import img2 from "/images/accreditations/acc2.png";
@@ -21,36 +22,49 @@ const ClientsContact = () => {
 
             {/* Accreditations Logos Grid */}
             <div className="grid grid-cols-3 gap-4">
-              <img
-                src={img1}
-                className="w-full border border-gray-200"
-                alt=""
-              />
-              <img
-                src={img2}
-                className="w-full border border-gray-200"
-                alt=""
-              />
-              <img
-                src={img3}
-                className="w-full border border-gray-200"
-                alt=""
-              />
-              <img
-                src={img4}
-                className="w-full border border-gray-200"
-                alt=""
-              />
-              <img
-                src={img5}
-                className="w-full border border-gray-200"
-                alt=""
-              />
-              <img
-                src={img6}
-                className="w-full border border-gray-200"
-                alt=""
-              />
+              <Link to="https://www.gov.uk/">
+                <img
+                  src={img1}
+                  className="w-full border border-gray-200"
+                  alt="AEO"
+                />
+              </Link>
+              <Link to="https://bifa.org/">
+                <img
+                  src={img2}
+                  className="w-full border border-gray-200"
+                  alt="BIFA"
+                />
+              </Link>
+              <Link to="https://fiata.org/">
+                <img
+                  src={img3}
+                  className="w-full border border-gray-200"
+                  alt="FIATA"
+                />
+              </Link>
+              <Link to="https://www.iata.org/">
+                <img
+                  src={img4}
+                  className="w-full border border-gray-200"
+                  alt="IATA"
+                />
+              </Link>
+              <Link to="https://www.eastwestln.com/">
+                <img
+                  src={img5}
+                  className="w-full border border-gray-200"
+                  alt=""
+                />
+              </Link>
+              <Link to="">
+                {" "}
+                <img
+                  src={img6}
+                  className="w-full border border-gray-200"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
 
