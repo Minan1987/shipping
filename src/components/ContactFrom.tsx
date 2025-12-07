@@ -2,8 +2,10 @@ import { useForm, type SubmitHandler } from "react-hook-form";
 
 interface IFormInput {
   name: string;
+  company?: string;
   email: string;
   phone: string;
+  message: string;
 }
 
 const ContactFrom = () => {
@@ -14,8 +16,10 @@ const ContactFrom = () => {
   } = useForm<IFormInput>({
     defaultValues: {
       name: "",
+      company: "",
       email: "",
       phone: "",
+      message: "",
     },
   });
 
@@ -49,6 +53,15 @@ const ContactFrom = () => {
           )}
         </div>
 
+        {/* COMPANY */}
+        <div>
+          <input
+            type="text"
+            placeholder="Company:"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+
         {/* EMAIL */}
         <div>
           <input
@@ -76,18 +89,6 @@ const ContactFrom = () => {
           )}
         </div>
 
-        {/* SELECT */}
-        <div>
-          <select className="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 outline-none">
-            <option disabled selected value="">
-              Select One
-            </option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-        </div>
-
         {/* PHONE */}
         <div>
           <input
@@ -105,6 +106,21 @@ const ContactFrom = () => {
           />
           {errors.phone && (
             <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>
+          )}
+        </div>
+        {/* PHONE */}
+        <div>
+          <textarea
+            placeholder="Your Message:"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+            {...register("message", {
+              required: "message is required!",
+            })}
+          />
+          {errors.message && (
+            <p className="text-red-600 text-sm mt-1">
+              {errors.message.message}
+            </p>
           )}
         </div>
 
