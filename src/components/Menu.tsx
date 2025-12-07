@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "/images/logo.png";
 import Search from "./Search";
 import { CiSearch } from "react-icons/ci";
@@ -13,9 +13,16 @@ function Menu() {
       <div className="flex items-center justify-between h-20 px-4 lg:justify-center lg:gap-16">
         {/* Logo */}
         <div className="w-fit">
-          <Link to="/">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-yellow-500 font-bold"
+                : "text-white  font-bold hover:text-yellow-500 "
+            }
+          >
             <img src={logo} alt="MD Global Logestic" className="h-28 z-10" />
-          </Link>
+          </NavLink>
         </div>
 
         {/* Hamburger */}
@@ -57,45 +64,77 @@ function Menu() {
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 mt-4 lg:mt-0">
             <li>
-              <Link
+              <NavLink
                 to="/"
-                className="text-yellow-600 hover:text-yellow-600 font-bold"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-yellow-600 font-bold">
+              <NavLink
+                to="/about-us"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
+              >
                 ABOUT US
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/services" className="hover:text-yellow-600 font-bold">
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
+              >
                 SERVICES
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" className="hover:text-yellow-600 font-bold">
-                PROJECTS
-              </Link>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
+              >
+                INDUSTRIES
+              </NavLink>
             </li>
             <li>
-              <Link to="/news" className="hover:text-yellow-600 font-bold">
+              <NavLink
+                to="/news"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
+              >
                 NEWS
-              </Link>
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/shop" className="hover:text-yellow-600 font-bold">
-                SHOP
-              </Link>
-            </li>
-            <li>
-              <Link
+              <NavLink
                 to="/contact-us"
-                className="hover:text-yellow-600 font-bold"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 font-bold"
+                    : "text-white  font-bold hover:text-yellow-500 "
+                }
               >
                 CONTACT US
-              </Link>
+              </NavLink>
             </li>
             <li>
               {/* Search & Outlet */}
