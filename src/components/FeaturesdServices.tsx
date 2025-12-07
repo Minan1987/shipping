@@ -15,7 +15,7 @@ const FeaturesdServices = () => {
   ];
 
   return (
-    <section className="py-6 lg:py-8 xl:py-16">
+    <section className="pb-6">
       {/* TOP TEXT SECTION */}
       <div className="container mx-auto px-4 lg:px-20 xl:px-40">
         <div className="text-center max-w-6xl mx-auto">
