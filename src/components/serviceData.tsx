@@ -9,6 +9,11 @@ import ExportServicesBanner from "/images/services/image7.webp";
 import documentationBanner from "/images/services/image8.webp";
 import WarehousingBanner from "/images/services/image9.webp";
 import FreightPackagingBanner from "/images/services/image10.webp";
+import DangerousGoodsBanner from "/images/services/image11.webp";
+import ProjectLogisticsBanner from "/images/services/image12.webp";
+import CharterServicesBanner from "/images/services/image13.webp";
+import OutofGaugeBanner from "/images/services/image14.webp";
+import HandCarryBanner from "/images/services/image15.webp";
 import { Link } from "react-router-dom";
 
 export interface ServiceSection {
@@ -85,7 +90,7 @@ export const servicesData: ServicesData = {
     title: "Road Freight",
     banner: roadBanner,
     intro:
-      "MD Global Freight provides a diverse range of export and import road freight services between the UK and most European countries.",
+      "MD Global Shipping provides a diverse range of export and import road freight services between the UK and most European countries.",
     description: [
       "Our experienced road freight team will choose the right service for your consignment. We work with large multinational haulage companies who operate daily services across Europe and beyond as well as smaller intimate companies for more specialised or dedicated services.",
     ],
@@ -141,9 +146,9 @@ export const servicesData: ServicesData = {
     title: "Import Services",
     banner: ImportServicesBanner,
     intro:
-      "At MD Global Freight we have the knowledge, expertise and experience to provide you with a complete import services package.",
+      "At MD Global Shipping we have the knowledge, expertise and experience to provide you with a complete import services package.",
     description: [
-      "MD Global Freight have been providing import services by air, road and sea for many years. We can offer a full imports service from the point of collection at the premises of your overseas supplier right through to delivery to your door in the UK.",
+      "MD Global Shipping have been providing import services by air, road and sea for many years. We can offer a full imports service from the point of collection at the premises of your overseas supplier right through to delivery to your door in the UK.",
     ],
     sections: [
       {
@@ -160,7 +165,7 @@ export const servicesData: ServicesData = {
     title: "Customs Clearance",
     banner: CustomsClearanceBanner,
     intro:
-      "At MD Global Freight we have the ability to provide customs clearance for your import and export shipments across all UK sea terminals and airports.",
+      "At MD Global Shipping we have the ability to provide customs clearance for your import and export shipments across all UK sea terminals and airports.",
     description: [
       "We hold a direct computer link to customs and all major UK ports, which allows us to provide an efficient and trusted customs clearance process for our customers.\n\nOur in house technology provides our customs clearance operators with full access to your shipment details in minutes. This allows us to request consignment information or obtain copy documentation at the click of a button.",
     ],
@@ -185,7 +190,7 @@ export const servicesData: ServicesData = {
     title: "Export Services",
     banner: ExportServicesBanner,
     intro:
-      "MD Global Freight provide export services by air, sea and road for a range of companies varying in size, location and business sector.",
+      "MD Global Shipping provide export services by air, sea and road for a range of companies varying in size, location and business sector.",
     description: [
       "We are able to provide a fully multi-modal export service to most destinations across the world. Our export team will listen to your needs and advise the most suitable service for your cargo.",
     ],
@@ -204,7 +209,7 @@ export const servicesData: ServicesData = {
             <br />
             <br />
             If you have any queries in relation to our export services, please{" "}
-            <Link to="/contact-us" className="text-yellow-600 font-semibold">
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
               contact us
             </Link>
             .
@@ -283,7 +288,7 @@ export const servicesData: ServicesData = {
             drive efficiency, optimise costs, and add value to your supply
             chain. Partner with us today to experience the difference in
             logistics excellence.{" "}
-            <Link to="/contact-us" className="text-yellow-600 font-semibold">
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
               contact us
             </Link>{" "}
             to discuss your warehousing needs and explore how we can support
@@ -313,6 +318,129 @@ export const servicesData: ServicesData = {
           "- Packing of Dangerous Goods",
           "- Compliance with ISPM15 Standards",
         ],
+      },
+    ],
+  },
+  "dangerous-goods": {
+    title: "Dangerous Goods",
+    banner: DangerousGoodsBanner,
+    intro:
+      "We are keeping ahead of the competition by using the latest technology and best resources available to offer a full and compliant dangerous goods shipping service by air, road and sea.",
+    description: [
+      "The regulations governing the transport of dangerous goods are specified in the IATA Dangerous Goods Regulations by Air and IMO International Maritime Organization Regulations manuals. All hazardous goods are classified accordingly within these manuals and the rules explain in detail the quantities permitted to be carried in each package and the type of packing required. With the help of our qualified and experienced team, we can ensure that your shipment is packed, documented and shipped in a fully compliant, professional and cost-effective manner. ",
+    ],
+    sections: [
+      {
+        title: "Packing",
+        text: "Packing of dangerous goods is of the utmost importance. MD Global Shipping is able to provide a full packing service using UN approved and certified boxes and labels.\n We have a constant stock of UN-approved fibreboard (4G) boxes and other customised packaging, suitable to safely move hazardous goods as well as the necessary absorbent materials. For temperature-sensitive goods we are also able to provide packing services for shipments requiring dry ice to ensure goods remain frozen during transit.",
+      },
+      {
+        title: "Documentation",
+        text: "Documentation is a priority for all dangerous goods shipments and at MD Global Shipping we have qualified staff that are trained to IATA and IMO standards.\n If you prepare your own documentation MD Global Shipping offer a complimentary document check service to ensure there are no obvious errors or mistakes which could cause your shipment to be rejected by the carrier causing unnecessary delays to your shipment. \nThe Dangerous Goods Note is a legal requirement for the transport of dangerous goods by air, sea and road. The person responsible for signing the Dangerous Goods Note is required by law to have received the appropriate training. MD Global Shipping ensures all staff handling dangerous goods shipments are up to date with their training requirements and have full access to all relevant publications regarding the transport of dangerous goods. ",
+      },
+      {
+        title: "Forwarding",
+        text: (
+          <>
+            Forwarding of dangerous goods could not be easier with Tudor
+            International Freight. With a strong relationship with the world's
+            major airlines and shipping lines, we are able to secure priority
+            space for your dangerous goods shipments. <br /> For more
+            information on the transport of dangerous goods and to discuss any
+            projects you need support with, please{" "}
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
+              contact us.
+            </Link>{" "}
+          </>
+        ),
+      },
+    ],
+  },
+  "project-logistics": {
+    title: "Project Logistics",
+    banner: ProjectLogisticsBanner,
+    intro:
+      "Our project logistics team provides a complete transport solution for the movement of heavy, oversized, abnormal and high value cargo across the world by air, sea and road.",
+    description: [
+      "Through extensive experience our specialist team have an excellent understanding of the unique challenges posed by global projects. We embrace the finer details of these challenges and by utilising our safe, reliable and efficient working procedures we can provide a tailor made service that is right for your business.\nServing customers from the oil and gas, engineering and construction sectors, MD Global Shipping has a proven track record in delivering on time and under budget logistic solutions to a wide range of projects. We take care of site surveys, route planning, relevant authority permissions and permits, vehicle convoys and all necessary collaboration between all parties involved.",
+    ],
+    sections: [
+      {
+        title: "Track and Trace Capabilities",
+        text: (
+          <>
+            Online track & trace and our unique reporting system DataNet ensures
+            that you have 24/7 access to up to date information relating to your
+            project cargo. <br /> It is our aim to seamlessly integrate with our
+            clients, and where required; their vendors and the end customer to
+            create a unified supply chain.
+            <br /> If you require any more information please{" "}
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
+              contact
+            </Link>{" "}
+            our project logistics team.
+          </>
+        ),
+      },
+    ],
+  },
+  "charter-services": {
+    title: "Charter Services",
+    banner: CharterServicesBanner,
+    intro:
+      "Our experienced staff have handled numerous vessel and aircraft charters over the past twenty five years making them well placed to advise on this specialist service.",
+    description: [
+      "Our specialist team will work closely with you from the start to understand your needs and find the most suitable vessel or aircraft for your cargo. If we feel that a charter service is unnecessary we will also advise you accordingly.\nWe are connected to a large network of airline and shipping line operators across the world which enables us to provide you with the right service at the right cost.\nOur dedicated team will personally attend to your shipment at the airport or port in order to ensure the cargo is transported, loaded and received safely.",
+    ],
+    sections: [
+      {
+        title: "",
+        text: (
+          <>
+            For further advice in respect of our charter services, please{" "}
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
+              contact us.
+            </Link>
+          </>
+        ),
+      },
+    ],
+  },
+  "out-of-gauge": {
+    title: "Out of Gauge",
+    banner: OutofGaugeBanner,
+    intro:
+      "At MD Global Shipping we successfully handle and manage the movement of out of gauge and abnormal load shipments across the world on a weekly basis.",
+    description: [
+      "Our specialist team have been moving heavy, out of gauge and special load consignments for many years. Whether you have one abnormal piece, or a complete project to move, our friendly staff will be more than happy to provide you with advice and guidance on the best method of transporting your cargo safely, on time and within budget.\n We use specialised equipment to move your out of gauge cargo inland including flat rack, flat beds and open top containers. Through our expansive network we are also able to assist with out of gauge packing and crating as well as the securing and lashing of your cargo.",
+    ],
+    sections: [
+      {
+        title: "",
+        text: (
+          <>
+            If you have any questions regarding the movement of your out of
+            gauge cargo, please do not hesitate to{" "}
+            <Link to="/contact-us" className="text-yellow-500 font-semibold">
+              contact us.
+            </Link>
+          </>
+        ),
+      },
+    ],
+  },
+  "hand-carry": {
+    title: "Hand Carry",
+    banner: HandCarryBanner,
+    intro:
+      "Our hand carry cargo service offers a premium solution for urgent and sensitive shipments that require immediate and secure transportation.",
+    description: [
+      "With this service, a dedicated courier personally accompanies your cargo from the pick up point through to the final destination, ensuring swift and reliable delivery including through customs borders. Whether it's important documents, valuable goods, or time-sensitive materials, hand carry cargo via air freight provides the fastest and most secure option for getting your items where they need to be, anywhere in the world.\n One of the key advantages of hand carry cargo is its speed. By bypassing traditional shipping methods, which may involve multiple transfers and delays, hand carry ensures extremely fast delivery, often within hours or just a few days depending on the distance.\nIf you have any queries or have any questions regarding our hand carry service, please contact us at MD Global Shipping, on 0845 825 4390 or email info@mdgloballogistic.com.",
+    ],
+    sections: [
+      {
+        title: "About Us - MD Global Shipping ",
+        text: "Established in Horsforth, Leeds, back in 1991, we are a logistics company who are experts in road, air and sea freight. We transport goods to most major cities, towns and suburbs across all 6 continents. We go over and above to ensure that our client’s products, goods and cargo are transported around the world safely and successfully. We are a family business, based in Horsforth, Leeds, West Yorkshire and are passionate about the local culture; which is why we are sponsors of the Horsforth Horse.",
       },
     ],
   },
