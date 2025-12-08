@@ -2,7 +2,7 @@ import { industriesData } from "./industriesData";
 import Breadcrumb from "./Breadcrumb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 type IndustriesSlug = keyof typeof industriesData;
 
@@ -102,12 +102,18 @@ const IndustriesDetails = () => {
         >
           {SliderItems.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="text-center bg-stone-600 rounded-lg shadow hover:shadow-lg transition p-4  border-2 border-yellow-500 underline decoration-amber-500 underline-offset-4">
-                {/* <img src={item.img} className="w-full " /> */}
-                <h5 className="text-white font-bold text-xl truncate">
-                  {item.title}
-                </h5>
-              </div>
+              <Link
+                to={`/industries/${item.title
+                  .toLowerCase()
+                  .replace(/ /g, "-")}`}
+              >
+                <div className="text-center bg-stone-600 rounded-lg shadow hover:shadow-lg transition p-4  border-2 border-yellow-500 underline decoration-amber-500 underline-offset-4">
+                  {/* <img src={item.img} className="w-full " /> */}
+                  <h5 className="text-white font-bold text-xl truncate">
+                    {item.title}
+                  </h5>
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
