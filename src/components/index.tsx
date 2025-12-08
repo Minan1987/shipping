@@ -17,4 +17,5 @@ export { default as FeaturesdServices } from "./FeaturesdServices";
 export { default as ClientsContact } from "./ClientsContact";
 export { default as BlueContactSection } from "./BlueContactSection";
 export { default as SearchResult } from "./SearchResult";
+export { default as Destinations } from "./Destinations";
 export { default as Footer } from "./Footer";

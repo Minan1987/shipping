@@ -8,6 +8,12 @@ import { MdPhone, MdOutlineMailOutline } from "react-icons/md";
 import { LuAlarmClock } from "react-icons/lu";
 
 const Footer = () => {
+  const items = [
+    { title: "About us" },
+    { title: "Services" },
+    { title: "Industries" },
+    { title: "Contact Us" },
+  ];
   return (
     <footer className="bg-[#0b1c2c] text-gray-300 pt-10">
       <div className="container mx-auto px-4">
@@ -26,7 +32,7 @@ const Footer = () => {
             </p>
 
             <Link
-              to="/"
+              to="/about-us"
               className="text-blue-400 flex items-center gap-1 hover:text-blue-300 transition"
             >
               Read More <MdKeyboardDoubleArrowRight />
@@ -67,17 +73,13 @@ const Footer = () => {
               Shipping for Businesses
             </h3>
             <ul className="space-y-2">
-              {[
-                "Our Services",
-                "Specialist",
-                "Industry",
-                "Request a Quote",
-                "Resources",
-                "DataNet",
-              ].map((item) => (
-                <li key={item}>
-                  <Link to="/" className="hover:text-blue-300 transition block">
-                    - {item}
+              {items.map((item, i) => (
+                <li key={i}>
+                  <Link
+                    to={`/${item.title.toLowerCase().replace(/ /g, "-")}`}
+                    className="hover:text-blue-300 transition block"
+                  >
+                    - {item.title}
                   </Link>
                 </li>
               ))}
@@ -96,23 +98,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/news" className="hover:text-blue-300">
+                <Link to="/services" className="hover:text-blue-300">
                   - Services
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-blue-300">
+                <Link to="/destinations" className="hover:text-blue-300">
                   - Destinations
                 </Link>
               </li>
+
               <li>
-                <Link to="/" className="hover:text-blue-300">
-                  - FAQ
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="hover:text-blue-300">
-                  - Testimonials
+                <Link to="/contact-us" className="hover:text-blue-300">
+                  - Get a Quote
                 </Link>
               </li>
             </ul>
