@@ -2,7 +2,7 @@ import { servicesData } from "./serviceData";
 import Breadcrumb from "./Breadcrumb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import icon1 from "/images/services/icon1.png";
 import icon2 from "/images/services/icon2.png";
@@ -117,12 +117,15 @@ const ServiceDetails = () => {
         >
           {SliderItems.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="text-center bg-stone-600 rounded-lg shadow hover:shadow-lg transition p-4  border-2 border-yellow-500 underline decoration-amber-500 underline-offset-4">
-                {/* <img src={item.img} className="w-full " /> */}
-                <h5 className="text-white font-bold text-xl truncate">
-                  {item.title}
-                </h5>
-              </div>
+              <Link
+                to={`/services/${item.title.toLowerCase().replace(/ /g, "-")}`}
+              >
+                <div className="text-center bg-stone-600 rounded-lg shadow hover:shadow-lg transition p-4  border-2 border-yellow-500 underline decoration-amber-500 underline-offset-4">
+                  <h5 className="text-white font-bold text-xl truncate">
+                    {item.title}
+                  </h5>
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
