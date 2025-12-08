@@ -100,7 +100,9 @@ const HomeIndustries = () => {
                   <p className="text-gray-600 line-clamp-3">{item.desc}</p>
 
                   <Link
-                    to="/services"
+                    to={`/industries/${item.title
+                      .toLowerCase()
+                      .replace(/ /g, "-")}`}
                     className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
                   >
                     READ MORE

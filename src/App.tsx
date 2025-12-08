@@ -11,13 +11,14 @@ import {
   Services,
   ServiceDetails,
   Shop,
-  Projects,
   HomeIndustries,
   FeaturesdServices,
   ClientsContact,
   SearchResult,
   BlueContactSection,
   RequestQuote,
+  Industries,
+  IndustriesDetails,
 } from "./components";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
@@ -50,7 +51,8 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:slug" element={<ServiceDetails />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/industries/:slug" element={<IndustriesDetails />} />
         <Route path="/news" element={<News />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/search" element={<SearchResult />} />

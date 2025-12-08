@@ -8,7 +8,7 @@ export { default as ServiceDetails } from "./ServiceDetails";
 export { default as HomeServices } from "./HomeServices";
 export { default as YellowContactBar } from "./YellowContactBar";
 export { default as Industries } from "./Industries";
-export { default as Projects } from "./Projects";
+export { default as IndustriesDetails } from "./IndustriesDetails";
 export { default as News } from "./News";
 export { default as Shop } from "./Shop";
 export { default as ContactUs } from "./ContactUs";

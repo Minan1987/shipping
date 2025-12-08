@@ -101,7 +101,7 @@ function Menu() {
             </li>
             <li>
               <NavLink
-                to="/projects"
+                to="/industries"
                 className={({ isActive }) =>
                   isActive
                     ? "text-yellow-500 font-bold"
@@ -109,18 +109,6 @@ function Menu() {
                 }
               >
                 INDUSTRIES
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/news"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-500 font-bold"
-                    : "text-white  font-bold hover:text-yellow-500 "
-                }
-              >
-                NEWS
               </NavLink>
             </li>
 
