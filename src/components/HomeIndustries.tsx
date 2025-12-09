@@ -25,7 +25,7 @@ const HomeIndustries = () => {
     },
     {
       img: serviceImg3,
-      title: "Chemical",
+      title: "chemicals",
       desc: "The chemical goods industry has experienced significant changes over recent years with a much larger emphasis being placed on logistics compliance and regulation. MD provide businesses with specialist chemical logistics advice and guidance.",
     },
     {
@@ -80,36 +80,43 @@ const HomeIndustries = () => {
         >
           {items.map((item, i) => (
             <SwiperSlide key={i}>
-              <div
-                key={i}
-                className="bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100"
+              <Link
+                to={`/industries/${item.title
+                  .toLowerCase()
+                  .replace(/ /g, "-")}`}
+                className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
               >
-                <img
-                  src={item.img}
-                  className="w-full h-60 object-cover rounded-t-lg"
-                  alt={item.title}
-                />
+                <div
+                  key={i}
+                  className="bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100"
+                >
+                  <img
+                    src={item.img}
+                    className="w-full h-60 object-cover rounded-t-lg"
+                    alt={item.title}
+                  />
 
-                <div className="p-5">
-                  <h5 className="font-bold text-xl pt-2 truncate">
-                    {item.title}
-                  </h5>
+                  <div className="p-5">
+                    <h5 className="font-bold text-xl pt-2 truncate">
+                      {item.title}
+                    </h5>
 
-                  <hr className="border-dashed my-3" />
+                    <hr className="border-dashed my-3" />
 
-                  <p className="text-gray-600 line-clamp-3">{item.desc}</p>
+                    <p className="text-gray-600 line-clamp-3">{item.desc}</p>
 
-                  <Link
-                    to={`/industries/${item.title
-                      .toLowerCase()
-                      .replace(/ /g, "-")}`}
-                    className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
-                  >
-                    READ MORE
-                    <hr className="border-yellow-600 mt-1 w-20" />
-                  </Link>
+                    <Link
+                      to={`/industries/${item.title
+                        .toLowerCase()
+                        .replace(/ /g, "-")}`}
+                      className="inline-block mt-4 text-yellow-600 font-semibold hover:text-yellow-500 transition"
+                    >
+                      READ MORE
+                      <hr className="border-yellow-600 mt-1 w-20" />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -22,6 +22,7 @@ import {
   Destinations,
 } from "./components";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 const HomePage = () => {
   return (
@@ -42,6 +43,7 @@ const HomePage = () => {
 const App = () => {
   return (
     <HashRouter>
+      <ScrollToTop />
       <header>
         <TopHeader />
         <Menu />
