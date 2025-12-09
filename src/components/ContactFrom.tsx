@@ -1,11 +1,12 @@
 import { useForm, type SubmitHandler } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 interface IFormInput {
   name: string;
-  company?: string;
   email: string;
   phone: string;
   message: string;
+  [key: string]: string;
 }
 
 const ContactFrom = () => {
@@ -13,18 +14,17 @@ const ContactFrom = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<IFormInput>({
-    defaultValues: {
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-  });
+    reset,
+  } = useForm<IFormInput>();
 
   const formSubmiting: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+    emailjs
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_PUBLIC_KEY")
+      .then(() => {
+        alert("Message Sent Successfully!");
+        reset();
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -51,15 +51,6 @@ const ContactFrom = () => {
           {errors.name && (
             <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>
           )}
-        </div>
-
-        {/* COMPANY */}
-        <div>
-          <input
-            type="text"
-            placeholder="Company:"
-            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
-          />
         </div>
 
         {/* EMAIL */}
@@ -108,7 +99,8 @@ const ContactFrom = () => {
             <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>
           )}
         </div>
-        {/* PHONE */}
+
+        {/* MESSAGE */}
         <div>
           <textarea
             placeholder="Your Message:"
