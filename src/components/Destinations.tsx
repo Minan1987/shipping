@@ -1,5 +1,5 @@
 import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-2.jpg";
+import banner from "/images/band-2.webp";
 import icon1 from "/images/destinations/icon1.png";
 import icon2 from "/images/destinations/icon2.png";
 import icon3 from "/images/destinations/icon3.png";

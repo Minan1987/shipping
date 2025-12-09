@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-2.jpg";
+import banner from "/images/band-2.webp";
 
 const Industries = () => {
   const items = [

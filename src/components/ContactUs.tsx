@@ -3,7 +3,7 @@ import { ImLocation } from "react-icons/im";
 import { MdPhone, MdOutlineMailOutline } from "react-icons/md";
 import { LuAlarmClock } from "react-icons/lu";
 import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-2.jpg";
+import banner from "/images/band-2.webp";
 
 const ContactUs = () => {
   return (

@@ -1,5 +1,5 @@
 import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-2.jpg";
+import banner from "/images/band-2.webp";
 
 const AboutUs = () => {
   return (

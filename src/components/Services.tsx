@@ -1,5 +1,5 @@
 import Breadcrumb from "./Breadcrumb";
-import banner from "/images/band-1.jpg";
+import banner from "/images/band-1.webp";
 import HomeServices from "./HomeServices";
 import FeaturesdServices from "./FeaturesdServices";
 
