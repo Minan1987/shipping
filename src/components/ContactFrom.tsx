@@ -52,8 +52,8 @@ const ContactFrom = () => {
                 message: "Name should have at least 3 characters.",
               },
               maxLength: {
-                value: 10,
-                message: "Name should have a maximum of 10 characters.",
+                value: 30,
+                message: "Name should have a maximum of 30 characters.",
               },
             })}
           />
@@ -71,8 +71,8 @@ const ContactFrom = () => {
             {...register("email", {
               required: "Email is required!",
               minLength: {
-                value: 10,
-                message: "Email should have at least 10 characters.",
+                value: 1,
+                message: "Email should have at least 1 characters.",
               },
               maxLength: {
                 value: 30,
