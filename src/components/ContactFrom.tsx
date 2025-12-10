@@ -19,7 +19,7 @@ const ContactFrom = () => {
 
   const formSubmiting: SubmitHandler<IFormInput> = (data) => {
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_PUBLIC_KEY")
+      .send("service_hs16jw5", "template_hfcbc5b", data, "vFOwgcwCbT-hGW1i9")
       .then(() => {
         alert("Message Sent Successfully!");
         reset();
