@@ -13,22 +13,18 @@ const ContactFrom = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
     reset,
+    formState: { errors },
   } = useForm<IFormInput>();
 
   const formSubmiting: SubmitHandler<IFormInput> = (data) => {
     // 1. Send message to ADMIN
-    emailjs.send(
-      "service_hs16jw5",
-      "template_cbpiiuj",
-      data,
-      "vFOwgcwCbT-hGW1i9"
-    );
-
-    // 2. Send Auto-Reply to USER
     emailjs
-      .send("service_hs16jw5", "template_hfcbc5b", data, "vFOwgcwCbT-hGW1i9")
+      .send("service_hs16jw5", "template_cbpiiuj", data, "vFOwgcwCbT-hGW1i9")
+
+      //   // 2. Send Auto-Reply to USER
+      //   emailjs
+      //     .send("service_hs16jw5", "template_hfcbc5b", data, "vFOwgcwCbT-hGW1i9")
       .then(() => {
         alert("Message Sent Successfully!");
         reset();
